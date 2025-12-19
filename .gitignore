@@ -77,9 +77,15 @@ models/neural_init/*.pth
 *.pt
 *.pth
 
-# Training data (too large for git)
-data/
+# Training data (too large for git) - but keep structure files
+data/*.pkl
 data_processed/
+# Keep data directory structure and metadata
+!data/
+!data/*.json
+!data/*.txt
+!data/*.md
+!data/*/.gitkeep
 
 # Exclude large visualizations and outputs
 outputs/

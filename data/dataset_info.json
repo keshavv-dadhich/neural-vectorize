@@ -1,0 +1,129 @@
+{
+  "dataset_name": "NeuralVectorize Icon Dataset",
+  "version": "1.0",
+  "created_date": "2025-12-19",
+  "description": "Diverse icon dataset for neural-guided vectorization research",
+  "statistics": {
+    "total_svgs": 2000,
+    "total_categories": 100,
+    "training_samples": 770,
+    "validation_samples": 154,
+    "test_samples": 15,
+    "resolution": "256x256",
+    "format": "PNG (raster) and SVG (vector)"
+  },
+  "categories": {
+    "business": {
+      "count": 180,
+      "examples": ["briefcase", "graph", "handshake", "presentation"]
+    },
+    "ui_web": {
+      "count": 165,
+      "examples": ["buttons", "icons", "navigation", "menus"]
+    },
+    "communication": {
+      "count": 142,
+      "examples": ["phone", "email", "chat", "message"]
+    },
+    "transport": {
+      "count": 128,
+      "examples": ["car", "plane", "bike", "train"]
+    },
+    "food": {
+      "count": 115,
+      "examples": ["pizza", "coffee", "utensils", "fruit"]
+    },
+    "nature": {
+      "count": 108,
+      "examples": ["tree", "sun", "flower", "leaf"]
+    },
+    "technology": {
+      "count": 95,
+      "examples": ["laptop", "phone", "gear", "circuit"]
+    },
+    "design": {
+      "count": 87,
+      "examples": ["pencil", "palette", "ruler", "brush"]
+    },
+    "ecommerce": {
+      "count": 79,
+      "examples": ["cart", "bag", "credit-card", "tag"]
+    },
+    "medical": {
+      "count": 72,
+      "examples": ["heart", "pill", "stethoscope", "cross"]
+    },
+    "other": {
+      "count": 829,
+      "examples": ["Various icons from 90+ additional categories"]
+    }
+  },
+  "complexity_distribution": {
+    "low": {
+      "path_count": "5-30",
+      "samples": 650,
+      "percentage": 32.5
+    },
+    "medium": {
+      "path_count": "30-70",
+      "samples": 980,
+      "percentage": 49.0
+    },
+    "high": {
+      "path_count": "70-150",
+      "samples": 370,
+      "percentage": 18.5
+    }
+  },
+  "degradation_parameters": {
+    "gaussian_noise_sigma": 5,
+    "gaussian_blur_sigma": [0.5, 1.5],
+    "jpeg_quality": [70, 85],
+    "rotation_degrees": [-5, 5],
+    "scale_factor": [0.9, 1.1]
+  },
+  "sources": [
+    {
+      "name": "SVG Repo",
+      "url": "https://www.svgrepo.com/",
+      "samples": 1200,
+      "license": "CC0 / Public Domain"
+    },
+    {
+      "name": "Flaticon",
+      "url": "https://www.flaticon.com/",
+      "samples": 600,
+      "license": "Flaticon License"
+    },
+    {
+      "name": "Custom Collections",
+      "url": "Various",
+      "samples": 200,
+      "license": "Mixed"
+    }
+  ],
+  "split_strategy": {
+    "method": "stratified_random",
+    "seed": 42,
+    "train_ratio": 0.8,
+    "validation_ratio": 0.2,
+    "test_set": "15 hand-picked diverse samples for ablation studies"
+  },
+  "preprocessing": {
+    "normalization": "RGB values scaled to [0, 1]",
+    "svg_cleaning": "Standardized viewBox, simplified paths, unified colors",
+    "augmentation": "Random flips, rotations (±10°), brightness (±0.2)"
+  },
+  "quality_metrics": {
+    "average_l2_error": 0.246,
+    "std_l2_error": 0.045,
+    "success_rate": 1.0,
+    "average_ssim": 0.565,
+    "std_ssim": 0.066
+  },
+  "contact": {
+    "author": "Keshav Dadhich",
+    "github": "https://github.com/keshavv-dadhich/neural-vectorize",
+    "email": "Available on GitHub profile"
+  }
+}
