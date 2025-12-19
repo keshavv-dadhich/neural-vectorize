@@ -123,10 +123,6 @@ neural-vectorize/
 ├── analysis/             # Experimental results
 │   ├── ablation_statistical_tests.json
 │   └── complexity_scaling_results.json
-├── PAPER_SUBMISSION_PACKAGE/  # Complete paper materials
-│   ├── documentation/
-│   ├── figures/
-│   └── analysis/
 └── requirements.txt      # Python dependencies
 ```
 
@@ -173,24 +169,6 @@ See `PAPER_SUBMISSION_PACKAGE/CRITICAL_EXPERIMENTS_RESULTS.md` for detailed anal
 - **GPU Opportunity**: Batched rendering could achieve 2-5× additional speedup
 - **Potential Total Speedup**: 11-27.5× over baseline
 
-## 📄 Paper & Citation
-
-This work has been prepared for submission to **SIGGRAPH Asia 2025**. Full paper draft available in `PAPER_SUBMISSION_PACKAGE/documentation/PAPER_DRAFT.md`.
-
-### Paper Quality Assessment
-- **Score**: ⭐⭐⭐⭐⭐ 5.0/5 (PERFECT)
-- **Acceptance Probability**: 90%+ (Strong Accept)
-- **Competitive Standing**: TOP-5% of submissions
-
-```bibtex
-@inproceedings{neuralvectorize2025,
-  title={Neural-Guided Vectorization with Edge-Aligned Optimization},
-  author={[Your Name]},
-  booktitle={SIGGRAPH Asia 2025},
-  year={2025},
-  note={Submitted}
-}
-```
 
 ## 🎓 Reproducing Results
 
@@ -295,23 +273,15 @@ This project is licensed under the MIT License - see `LICENSE` file for details.
 
 ## 📧 Contact
 
-- **Author**: [Your Name]
-- **Email**: [your.email@university.edu]
-- **GitHub**: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- **Project Link**: [https://github.com/YOUR_USERNAME/neural-vectorize](https://github.com/YOUR_USERNAME/neural-vectorize)
+- **Author**: [Keshav Dadhich]
+- **Email**: [dadhichkeshav5@gmail.com]
+- **GitHub**: https://github.com/keshavv-dadhich
 
-## 🌟 Star History
 
 If you find this project helpful, please consider giving it a star ⭐!
 
-[![Star History Chart](https://api.star-history.com/svg?repos=YOUR_USERNAME/neural-vectorize&type=Date)](https://star-history.com/#YOUR_USERNAME/neural-vectorize&Date)
-
----
 
 <p align="center">
   Made with ❤️ for the computer graphics community
 </p>
 
-<p align="center">
-  <sub>Status: 🎉 Submission-ready at perfect 5.0/5 quality!</sub>
-</p>
