@@ -1,0 +1,633 @@
+{
+  "timestamp": "2025-12-17T16:30:19.066201",
+  "num_samples": 77,
+  "num_steps": 150,
+  "samples": {
+    "icon_426509": {
+      "test_id": "icon_426509",
+      "status": "success",
+      "elapsed_seconds": 67.50717902183533,
+      "segments_before_merge": 229,
+      "segments_after_merge": 75,
+      "reduction_rate": 0.6724890829694323
+    },
+    "icon_855402": {
+      "test_id": "icon_855402",
+      "status": "success",
+      "elapsed_seconds": 50.66040015220642,
+      "segments_before_merge": 164,
+      "segments_after_merge": 45,
+      "reduction_rate": 0.725609756097561
+    },
+    "icon_594441": {
+      "test_id": "icon_594441",
+      "status": "success",
+      "elapsed_seconds": 89.1015100479126,
+      "segments_before_merge": 268,
+      "segments_after_merge": 104,
+      "reduction_rate": 0.6119402985074627
+    },
+    "icon_284412": {
+      "test_id": "icon_284412",
+      "status": "success",
+      "elapsed_seconds": 78.0767433643341,
+      "segments_before_merge": 256,
+      "segments_after_merge": 102,
+      "reduction_rate": 0.6015625
+    },
+    "icon_575922": {
+      "test_id": "icon_575922",
+      "status": "success",
+      "elapsed_seconds": 115.55194091796875,
+      "segments_before_merge": 351,
+      "segments_after_merge": 111,
+      "reduction_rate": 0.6837606837606838
+    },
+    "icon_598397": {
+      "test_id": "icon_598397",
+      "status": "success",
+      "elapsed_seconds": 104.91909718513489,
+      "segments_before_merge": 306,
+      "segments_after_merge": 114,
+      "reduction_rate": 0.6274509803921569
+    },
+    "icon_183508": {
+      "test_id": "icon_183508",
+      "status": "success",
+      "elapsed_seconds": 73.56773090362549,
+      "segments_before_merge": 191,
+      "segments_after_merge": 66,
+      "reduction_rate": 0.6544502617801047
+    },
+    "icon_832506": {
+      "test_id": "icon_832506",
+      "status": "success",
+      "elapsed_seconds": 122.60210514068604,
+      "segments_before_merge": 291,
+      "segments_after_merge": 76,
+      "reduction_rate": 0.738831615120275
+    },
+    "icon_373277": {
+      "test_id": "icon_373277",
+      "status": "success",
+      "elapsed_seconds": 235.53506088256836,
+      "segments_before_merge": 578,
+      "segments_after_merge": 178,
+      "reduction_rate": 0.6920415224913494
+    },
+    "icon_196507": {
+      "test_id": "icon_196507",
+      "status": "success",
+      "elapsed_seconds": 173.49278497695923,
+      "segments_before_merge": 462,
+      "segments_after_merge": 150,
+      "reduction_rate": 0.6753246753246753
+    },
+    "icon_859049": {
+      "test_id": "icon_859049",
+      "status": "success",
+      "elapsed_seconds": 107.9824447631836,
+      "segments_before_merge": 281,
+      "segments_after_merge": 102,
+      "reduction_rate": 0.6370106761565837
+    },
+    "icon_905257": {
+      "test_id": "icon_905257",
+      "status": "success",
+      "elapsed_seconds": 265.0627427101135,
+      "segments_before_merge": 695,
+      "segments_after_merge": 159,
+      "reduction_rate": 0.7712230215827338
+    },
+    "icon_627274": {
+      "test_id": "icon_627274",
+      "status": "success",
+      "elapsed_seconds": 25.112319231033325,
+      "segments_before_merge": 69,
+      "segments_after_merge": 28,
+      "reduction_rate": 0.5942028985507246
+    },
+    "icon_716888": {
+      "test_id": "icon_716888",
+      "status": "success",
+      "elapsed_seconds": 211.92790603637695,
+      "segments_before_merge": 619,
+      "segments_after_merge": 200,
+      "reduction_rate": 0.6768982229402262
+    },
+    "icon_922183": {
+      "test_id": "icon_922183",
+      "status": "success",
+      "elapsed_seconds": 295.5404050350189,
+      "segments_before_merge": 711,
+      "segments_after_merge": 169,
+      "reduction_rate": 0.7623066104078762
+    },
+    "icon_606036": {
+      "test_id": "icon_606036",
+      "status": "success",
+      "elapsed_seconds": 71.18509697914124,
+      "segments_before_merge": 175,
+      "segments_after_merge": 63,
+      "reduction_rate": 0.64
+    },
+    "icon_311853": {
+      "test_id": "icon_311853",
+      "status": "success",
+      "elapsed_seconds": 108.54896521568298,
+      "segments_before_merge": 262,
+      "segments_after_merge": 83,
+      "reduction_rate": 0.6832061068702291
+    },
+    "icon_914125": {
+      "test_id": "icon_914125",
+      "status": "success",
+      "elapsed_seconds": 128.06792283058167,
+      "segments_before_merge": 334,
+      "segments_after_merge": 116,
+      "reduction_rate": 0.652694610778443
+    },
+    "icon_454163": {
+      "test_id": "icon_454163",
+      "status": "success",
+      "elapsed_seconds": 229.62641882896423,
+      "segments_before_merge": 549,
+      "segments_after_merge": 138,
+      "reduction_rate": 0.7486338797814207
+    },
+    "icon_848732": {
+      "test_id": "icon_848732",
+      "status": "success",
+      "elapsed_seconds": 387.5197949409485,
+      "segments_before_merge": 757,
+      "segments_after_merge": 165,
+      "reduction_rate": 0.7820343461030383
+    },
+    "icon_209151": {
+      "test_id": "icon_209151",
+      "status": "success",
+      "elapsed_seconds": 177.08681893348694,
+      "segments_before_merge": 485,
+      "segments_after_merge": 177,
+      "reduction_rate": 0.6350515463917525
+    },
+    "icon_985291": {
+      "test_id": "icon_985291",
+      "status": "success",
+      "elapsed_seconds": 249.25159692764282,
+      "segments_before_merge": 676,
+      "segments_after_merge": 210,
+      "reduction_rate": 0.6893491124260356
+    },
+    "icon_889069": {
+      "test_id": "icon_889069",
+      "status": "success",
+      "elapsed_seconds": 101.11807703971863,
+      "segments_before_merge": 267,
+      "segments_after_merge": 97,
+      "reduction_rate": 0.6367041198501873
+    },
+    "icon_862837": {
+      "test_id": "icon_862837",
+      "status": "success",
+      "elapsed_seconds": 109.39111709594727,
+      "segments_before_merge": 279,
+      "segments_after_merge": 103,
+      "reduction_rate": 0.6308243727598566
+    },
+    "icon_282500": {
+      "test_id": "icon_282500",
+      "status": "success",
+      "elapsed_seconds": 48.72929382324219,
+      "segments_before_merge": 129,
+      "segments_after_merge": 52,
+      "reduction_rate": 0.5968992248062015
+    },
+    "icon_608814": {
+      "test_id": "icon_608814",
+      "status": "success",
+      "elapsed_seconds": 64.77236914634705,
+      "segments_before_merge": 170,
+      "segments_after_merge": 72,
+      "reduction_rate": 0.5764705882352941
+    },
+    "icon_863508": {
+      "test_id": "icon_863508",
+      "status": "success",
+      "elapsed_seconds": 497.4985980987549,
+      "segments_before_merge": 1143,
+      "segments_after_merge": 271,
+      "reduction_rate": 0.7629046369203849
+    },
+    "icon_019248": {
+      "test_id": "icon_019248",
+      "status": "success",
+      "elapsed_seconds": 102.10724020004272,
+      "segments_before_merge": 280,
+      "segments_after_merge": 105,
+      "reduction_rate": 0.625
+    },
+    "icon_129500": {
+      "test_id": "icon_129500",
+      "status": "success",
+      "elapsed_seconds": 250.77050185203552,
+      "segments_before_merge": 722,
+      "segments_after_merge": 213,
+      "reduction_rate": 0.7049861495844876
+    },
+    "icon_693388": {
+      "test_id": "icon_693388",
+      "status": "success",
+      "elapsed_seconds": 104.09234595298767,
+      "segments_before_merge": 274,
+      "segments_after_merge": 79,
+      "reduction_rate": 0.7116788321167884
+    },
+    "icon_897320": {
+      "test_id": "icon_897320",
+      "status": "success",
+      "elapsed_seconds": 223.14703011512756,
+      "segments_before_merge": 622,
+      "segments_after_merge": 212,
+      "reduction_rate": 0.6591639871382637
+    },
+    "icon_458706": {
+      "test_id": "icon_458706",
+      "status": "success",
+      "elapsed_seconds": 123.48035216331482,
+      "segments_before_merge": 331,
+      "segments_after_merge": 87,
+      "reduction_rate": 0.7371601208459215
+    },
+    "icon_548885": {
+      "test_id": "icon_548885",
+      "status": "success",
+      "elapsed_seconds": 162.22523093223572,
+      "segments_before_merge": 487,
+      "segments_after_merge": 157,
+      "reduction_rate": 0.677618069815195
+    },
+    "icon_965533": {
+      "test_id": "icon_965533",
+      "status": "success",
+      "elapsed_seconds": 122.61212992668152,
+      "segments_before_merge": 345,
+      "segments_after_merge": 135,
+      "reduction_rate": 0.6086956521739131
+    },
+    "icon_252364": {
+      "test_id": "icon_252364",
+      "status": "success",
+      "elapsed_seconds": 83.76400685310364,
+      "segments_before_merge": 225,
+      "segments_after_merge": 92,
+      "reduction_rate": 0.5911111111111111
+    },
+    "icon_889970": {
+      "test_id": "icon_889970",
+      "status": "success",
+      "elapsed_seconds": 134.34303998947144,
+      "segments_before_merge": 372,
+      "segments_after_merge": 144,
+      "reduction_rate": 0.6129032258064516
+    },
+    "icon_740574": {
+      "test_id": "icon_740574",
+      "status": "success",
+      "elapsed_seconds": 40.47721195220947,
+      "segments_before_merge": 108,
+      "segments_after_merge": 47,
+      "reduction_rate": 0.5648148148148149
+    },
+    "icon_593394": {
+      "test_id": "icon_593394",
+      "status": "success",
+      "elapsed_seconds": 128.50487399101257,
+      "segments_before_merge": 361,
+      "segments_after_merge": 114,
+      "reduction_rate": 0.6842105263157895
+    },
+    "icon_716676": {
+      "test_id": "icon_716676",
+      "status": "success",
+      "elapsed_seconds": 105.97631311416626,
+      "segments_before_merge": 296,
+      "segments_after_merge": 101,
+      "reduction_rate": 0.6587837837837838
+    },
+    "icon_138469": {
+      "test_id": "icon_138469",
+      "status": "success",
+      "elapsed_seconds": 133.70030879974365,
+      "segments_before_merge": 364,
+      "segments_after_merge": 119,
+      "reduction_rate": 0.6730769230769231
+    },
+    "icon_178947": {
+      "test_id": "icon_178947",
+      "status": "success",
+      "elapsed_seconds": 103.8004698753357,
+      "segments_before_merge": 281,
+      "segments_after_merge": 68,
+      "reduction_rate": 0.7580071174377224
+    },
+    "icon_578804": {
+      "test_id": "icon_578804",
+      "status": "success",
+      "elapsed_seconds": 147.36687803268433,
+      "segments_before_merge": 375,
+      "segments_after_merge": 136,
+      "reduction_rate": 0.6373333333333333
+    },
+    "icon_919199": {
+      "test_id": "icon_919199",
+      "status": "success",
+      "elapsed_seconds": 72.6243839263916,
+      "segments_before_merge": 194,
+      "segments_after_merge": 67,
+      "reduction_rate": 0.654639175257732
+    },
+    "icon_094622": {
+      "test_id": "icon_094622",
+      "status": "success",
+      "elapsed_seconds": 39.782418966293335,
+      "segments_before_merge": 84,
+      "segments_after_merge": 35,
+      "reduction_rate": 0.5833333333333333
+    },
+    "icon_725917": {
+      "test_id": "icon_725917",
+      "status": "success",
+      "elapsed_seconds": 217.25091004371643,
+      "segments_before_merge": 559,
+      "segments_after_merge": 174,
+      "reduction_rate": 0.6887298747763864
+    },
+    "icon_899422": {
+      "test_id": "icon_899422",
+      "status": "success",
+      "elapsed_seconds": 215.656103849411,
+      "segments_before_merge": 380,
+      "segments_after_merge": 160,
+      "reduction_rate": 0.5789473684210527
+    },
+    "icon_324109": {
+      "test_id": "icon_324109",
+      "status": "success",
+      "elapsed_seconds": 316.7946879863739,
+      "segments_before_merge": 719,
+      "segments_after_merge": 200,
+      "reduction_rate": 0.721835883171071
+    },
+    "icon_000266": {
+      "test_id": "icon_000266",
+      "status": "success",
+      "elapsed_seconds": 164.68135690689087,
+      "segments_before_merge": 356,
+      "segments_after_merge": 132,
+      "reduction_rate": 0.6292134831460674
+    },
+    "icon_304242": {
+      "test_id": "icon_304242",
+      "status": "success",
+      "elapsed_seconds": 149.30399894714355,
+      "segments_before_merge": 329,
+      "segments_after_merge": 87,
+      "reduction_rate": 0.7355623100303952
+    },
+    "icon_130674": {
+      "test_id": "icon_130674",
+      "status": "success",
+      "elapsed_seconds": 114.85960507392883,
+      "segments_before_merge": 245,
+      "segments_after_merge": 68,
+      "reduction_rate": 0.7224489795918367
+    },
+    "icon_947119": {
+      "test_id": "icon_947119",
+      "status": "success",
+      "elapsed_seconds": 99.20548605918884,
+      "segments_before_merge": 217,
+      "segments_after_merge": 79,
+      "reduction_rate": 0.6359447004608295
+    },
+    "icon_752870": {
+      "test_id": "icon_752870",
+      "status": "success",
+      "elapsed_seconds": 100.05816602706909,
+      "segments_before_merge": 254,
+      "segments_after_merge": 75,
+      "reduction_rate": 0.704724409448819
+    },
+    "icon_448696": {
+      "test_id": "icon_448696",
+      "status": "success",
+      "elapsed_seconds": 147.57680296897888,
+      "segments_before_merge": 412,
+      "segments_after_merge": 138,
+      "reduction_rate": 0.6650485436893203
+    },
+    "icon_900757": {
+      "test_id": "icon_900757",
+      "status": "success",
+      "elapsed_seconds": 118.34900307655334,
+      "segments_before_merge": 345,
+      "segments_after_merge": 108,
+      "reduction_rate": 0.6869565217391305
+    },
+    "icon_624439": {
+      "test_id": "icon_624439",
+      "status": "success",
+      "elapsed_seconds": 106.80740094184875,
+      "segments_before_merge": 280,
+      "segments_after_merge": 62,
+      "reduction_rate": 0.7785714285714286
+    },
+    "icon_320010": {
+      "test_id": "icon_320010",
+      "status": "success",
+      "elapsed_seconds": 74.84517908096313,
+      "segments_before_merge": 186,
+      "segments_after_merge": 68,
+      "reduction_rate": 0.6344086021505376
+    },
+    "icon_208971": {
+      "test_id": "icon_208971",
+      "status": "success",
+      "elapsed_seconds": 169.00107192993164,
+      "segments_before_merge": 460,
+      "segments_after_merge": 130,
+      "reduction_rate": 0.7173913043478262
+    },
+    "icon_805885": {
+      "test_id": "icon_805885",
+      "status": "success",
+      "elapsed_seconds": 142.65324592590332,
+      "segments_before_merge": 384,
+      "segments_after_merge": 129,
+      "reduction_rate": 0.6640625
+    },
+    "icon_898103": {
+      "test_id": "icon_898103",
+      "status": "success",
+      "elapsed_seconds": 325.1139461994171,
+      "segments_before_merge": 781,
+      "segments_after_merge": 180,
+      "reduction_rate": 0.7695262483994878
+    },
+    "icon_258703": {
+      "test_id": "icon_258703",
+      "status": "success",
+      "elapsed_seconds": 155.4378890991211,
+      "segments_before_merge": 476,
+      "segments_after_merge": 126,
+      "reduction_rate": 0.7352941176470589
+    },
+    "icon_880273": {
+      "test_id": "icon_880273",
+      "status": "success",
+      "elapsed_seconds": 168.1806252002716,
+      "segments_before_merge": 505,
+      "segments_after_merge": 130,
+      "reduction_rate": 0.7425742574257426
+    },
+    "icon_476684": {
+      "test_id": "icon_476684",
+      "status": "success",
+      "elapsed_seconds": 40.49963903427124,
+      "segments_before_merge": 111,
+      "segments_after_merge": 47,
+      "reduction_rate": 0.5765765765765766
+    },
+    "icon_127484": {
+      "test_id": "icon_127484",
+      "status": "success",
+      "elapsed_seconds": 256.24054074287415,
+      "segments_before_merge": 700,
+      "segments_after_merge": 200,
+      "reduction_rate": 0.7142857142857143
+    },
+    "icon_813288": {
+      "test_id": "icon_813288",
+      "status": "success",
+      "elapsed_seconds": 115.6673309803009,
+      "segments_before_merge": 320,
+      "segments_after_merge": 116,
+      "reduction_rate": 0.6375
+    },
+    "icon_959169": {
+      "test_id": "icon_959169",
+      "status": "success",
+      "elapsed_seconds": 129.81261682510376,
+      "segments_before_merge": 397,
+      "segments_after_merge": 86,
+      "reduction_rate": 0.783375314861461
+    },
+    "icon_422779": {
+      "test_id": "icon_422779",
+      "status": "success",
+      "elapsed_seconds": 192.84378504753113,
+      "segments_before_merge": 576,
+      "segments_after_merge": 165,
+      "reduction_rate": 0.7135416666666667
+    },
+    "icon_703948": {
+      "test_id": "icon_703948",
+      "status": "success",
+      "elapsed_seconds": 146.89528131484985,
+      "segments_before_merge": 456,
+      "segments_after_merge": 142,
+      "reduction_rate": 0.6885964912280702
+    },
+    "icon_588899": {
+      "test_id": "icon_588899",
+      "status": "success",
+      "elapsed_seconds": 132.4583489894867,
+      "segments_before_merge": 426,
+      "segments_after_merge": 142,
+      "reduction_rate": 0.6666666666666667
+    },
+    "icon_267752": {
+      "test_id": "icon_267752",
+      "status": "success",
+      "elapsed_seconds": 115.87645101547241,
+      "segments_before_merge": 328,
+      "segments_after_merge": 80,
+      "reduction_rate": 0.7560975609756098
+    },
+    "icon_690766": {
+      "test_id": "icon_690766",
+      "status": "success",
+      "elapsed_seconds": 161.22785592079163,
+      "segments_before_merge": 445,
+      "segments_after_merge": 122,
+      "reduction_rate": 0.7258426966292135
+    },
+    "icon_866347": {
+      "test_id": "icon_866347",
+      "status": "success",
+      "elapsed_seconds": 120.15382194519043,
+      "segments_before_merge": 308,
+      "segments_after_merge": 107,
+      "reduction_rate": 0.6525974025974026
+    },
+    "icon_917614": {
+      "test_id": "icon_917614",
+      "status": "success",
+      "elapsed_seconds": 162.75469183921814,
+      "segments_before_merge": 467,
+      "segments_after_merge": 111,
+      "reduction_rate": 0.7623126338329764
+    },
+    "icon_097813": {
+      "test_id": "icon_097813",
+      "status": "success",
+      "elapsed_seconds": 169.8827121257782,
+      "segments_before_merge": 459,
+      "segments_after_merge": 111,
+      "reduction_rate": 0.7581699346405228
+    },
+    "icon_843785": {
+      "test_id": "icon_843785",
+      "status": "success",
+      "elapsed_seconds": 172.65817499160767,
+      "segments_before_merge": 511,
+      "segments_after_merge": 135,
+      "reduction_rate": 0.735812133072407
+    },
+    "icon_058889": {
+      "test_id": "icon_058889",
+      "status": "success",
+      "elapsed_seconds": 158.93165397644043,
+      "segments_before_merge": 435,
+      "segments_after_merge": 149,
+      "reduction_rate": 0.6574712643678161
+    },
+    "icon_782406": {
+      "test_id": "icon_782406",
+      "status": "success",
+      "elapsed_seconds": 64.16490888595581,
+      "segments_before_merge": 171,
+      "segments_after_merge": 61,
+      "reduction_rate": 0.6432748538011697
+    },
+    "icon_224957": {
+      "test_id": "icon_224957",
+      "status": "success",
+      "elapsed_seconds": 101.46326613426208,
+      "segments_before_merge": 271,
+      "segments_after_merge": 91,
+      "reduction_rate": 0.6642066420664207
+    }
+  },
+  "summary": {
+    "total_samples": 77,
+    "processed": 77,
+    "skipped": 0,
+    "failed": 0,
+    "avg_segments_after_merge": 117.50649350649351,
+    "avg_reduction_rate": 0.6785709037952717,
+    "avg_time_per_sample": 146.69503553192337,
+    "total_time": 11295.5177359581
+  }
+}

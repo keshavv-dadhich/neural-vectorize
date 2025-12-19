@@ -1,0 +1,24 @@
+# Core dependencies for SVG processing and dataset generation
+cairosvg==2.7.1
+svgwrite==1.4.3
+svgpathtools==1.6.1
+shapely==2.0.2
+
+# Image processing
+Pillow==10.1.0
+opencv-python==4.8.1.78
+scikit-image==0.22.0
+
+# Numerical and scientific computing
+numpy==1.24.3
+scipy==1.11.4
+
+# Visualization
+matplotlib==3.8.2
+
+# Utilities
+tqdm==4.66.1
+
+# Future ML dependencies (commented out for now)
+# torch==2.1.0
+# diffvg @ git+https://github.com/BachiLi/diffvg.git

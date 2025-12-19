@@ -1,0 +1,101 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific - exclude intermediate/temporary files
+logs/
+*.log
+nohup.out
+
+# Keep only final results
+baselines/*/
+!baselines/optimization_full/
+!baselines/edge_init/
+!baselines/neural_init/
+
+# Exclude all markdown docs except README
+ABLATION_RESULTS.md
+CONFERENCE_*.md
+CRITICAL_EXPERIMENTS_PLAN.md
+EXPERIMENTS_*.md
+FINAL_STATUS.md
+IMPLEMENTATION_COMPLETE.md
+OPTIMIZATION_VECTORIZER*.md
+PAPER_COMPLETION_CHECKLIST.md
+PAPER_DRAFT.md
+PAPER_ENHANCEMENTS.md
+PRESENTATION_SLIDES.md
+PRIORITY_STATUS.md
+PROFESSOR_REVIEW_GUIDE.md
+PROJECT_JOURNEY.md
+PROJECT_STATUS_UPDATED.md
+README_OLD.md
+RUN_EXPERIMENTS.md
+STATUS_REPORT.md
+SUBMISSION_CHECKLIST.md
+
+# Large files to upload manually (>1MB)
+# These will be uploaded via GitHub web interface
+data/training_dataset.pkl
+data_processed/meta.json
+models/neural_init/*.pt
+models/neural_init/*.pth
+*.pt
+*.pth
+
+# Training data (too large for git)
+data/
+data_processed/
+
+# Exclude large visualizations and outputs
+outputs/
+logs/neural_training.log
+training/checkpoints/
+
+# Large output files
+outputs/vectorized_test/
+*.png
+*.svg
+!figures/*.png
+!figures/*.pdf
+!PAPER_SUBMISSION_PACKAGE/figures/*.png
+!PAPER_SUBMISSION_PACKAGE/figures/*.pdf
+
+# Temporary test outputs
+outputs/test_*.svg
+outputs/init_comparison.png
+outputs/optimization_comparison.png

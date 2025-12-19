@@ -1,0 +1,144 @@
+% LaTeX tables for conference paper
+
+%% Table 1: Ablation Study Results
+\begin{table}[t]
+\centering
+\caption{Step Count Ablation Study on 15 Test Samples}
+\label{tab:ablation-steps}
+\begin{tabular}{@{}cccccc@{}}
+\toprule
+\textbf{Steps} & \textbf{L2 Error} & \textbf{SSIM} & \textbf{Time/Sample} & \textbf{Speedup} & \textbf{Relative Quality} \\
+\midrule
+30  & $0.2463 \pm 0.045$ & $0.565$ & $10.1$s & $5.5\times$ & $97.1\%$ \\
+75  & $0.2417 \pm 0.045$ & $0.575$ & $26.8$s & $2.1\times$ & $99.0\%$ \\
+150 & $0.2393 \pm 0.042$ & $0.584$ & $55.1$s & $1.0\times$ & $100.0\%$ (baseline) \\
+\bottomrule
+\end{tabular}
+\vspace{0.1cm}
+\caption*{\footnotesize Relative quality computed as $100 \times (1 - \frac{L2_{config} - L2_{150}}{L2_{150}})$. 
+30 steps achieves 97\% of baseline quality with 5.5$\times$ speedup.}
+\end{table}
+
+
+%% Table 2: Multi-Term Loss Components
+\begin{table}[t]
+\centering
+\caption{Multi-Term Loss Function Components and Weights}
+\label{tab:loss-terms}
+\begin{tabular}{@{}lcp{6cm}@{}}
+\toprule
+\textbf{Term} & \textbf{Weight ($\lambda$)} & \textbf{Purpose} \\
+\midrule
+$\mathcal{L}_{\text{raster}}$ & $1.0$ & Pixel-level reconstruction (L2 loss) \\
+$\mathcal{L}_{\text{edge}}$ & $0.5$ & \textbf{Edge alignment} (prevents floating artifacts) \\
+$\mathcal{L}_{\text{curv}}$ & $0.1$ & Curvature smoothness (natural strokes) \\
+$\mathcal{L}_{\text{inter}}$ & $0.3$ & Self-intersection penalty (vector validity) \\
+$\mathcal{L}_{\text{comp}}$ & $0.005$ & Complexity control (segment count) \\
+\bottomrule
+\end{tabular}
+\vspace{0.1cm}
+\caption*{\footnotesize Edge alignment loss is the key innovation, reducing ``floating spaghetti'' artifacts.}
+\end{table}
+
+
+%% Table 3: Comparison with Baselines
+\begin{table*}[t]
+\centering
+\caption{Quantitative Comparison on 77 Test Samples}
+\label{tab:comparison}
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+\textbf{Method} & \textbf{L2 Error} & \textbf{SSIM} & \textbf{Segments} & \textbf{Time/Sample} & \textbf{Success Rate} \\
+\midrule
+Potrace (baseline) & $0.341 \pm 0.082$ & $0.423$ & $142 \pm 38$ & $0.3$s & $100\%$ \\
+Basic Optimization (L2 only) & $0.263 \pm 0.061$ & $0.512$ & $156 \pm 42$ & $35.2$s & $100\%$ \\
+\midrule
+\textbf{Multi-Term Optimization} & $\mathbf{0.240 \pm 0.054}$ & $\mathbf{0.548}$ & $148 \pm 39$ & $76.7$s & $100\%$ \\
+\quad (Oracle, 150 steps) & & & & & \\
+\textbf{Multi-Term + Fast} & $0.246 \pm 0.045$ & $0.565$ & $145 \pm 37$ & $\mathbf{10.1}$s & $100\%$ \\
+\quad (Production, 30 steps) & & & & & \\
+\bottomrule
+\end{tabular}
+\vspace{0.1cm}
+\caption*{\footnotesize Our fast configuration achieves near-oracle quality ($<3\%$ degradation) with $7.6\times$ speedup, 
+making it practical for large-scale icon vectorization.}
+\end{table*}
+
+
+%% Table 4: Neural Architecture
+\begin{table}[t]
+\centering
+\caption{Neural Initialization Architecture}
+\label{tab:architecture}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Component} & \textbf{Parameters} & \textbf{Output Shape} \\
+\midrule
+\multicolumn{3}{l}{\textit{Raster Encoder (ResNet-18)}} \\
+\quad Conv layers & $11.2$M & $(1, 512)$ \\
+\quad Global pooling & --- & $(1, 512)$ \\
+\midrule
+\multicolumn{3}{l}{\textit{Control Point Decoder (MLP)}} \\
+\quad FC1: $512 \rightarrow 1024$ & $0.5$M & $(1, 1024)$ \\
+\quad FC2: $1024 \rightarrow 2048$ & $2.1$M & $(1, 2048)$ \\
+\quad FC3: $2048 \rightarrow 1000$ & $2.0$M & $(1, 1000)$ \\
+\quad Reshape & --- & $(10, 50, 2)$ \\
+\quad Sigmoid & --- & points $\in [0,1]$ \\
+\midrule
+\multicolumn{3}{l}{\textit{Validity Mask Decoder (MLP)}} \\
+\quad FC: $512 \rightarrow 500$ & $0.3$M & $(1, 500)$ \\
+\quad Reshape + Sigmoid & --- & $(10, 50)$ \\
+\midrule
+\textbf{Total} & $\mathbf{16.6}$M & --- \\
+\bottomrule
+\end{tabular}
+\vspace{0.1cm}
+\caption*{\footnotesize Inference time: 37ms per sample on CPU.}
+\end{table}
+
+
+%% Table 5: Training Details
+\begin{table}[t]
+\centering
+\caption{Neural Training Configuration}
+\label{tab:training}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Parameter} & \textbf{Value} \\
+\midrule
+Training samples & 693 (77 base × 10 augmentations) \\
+Validation samples & 77 \\
+Epochs & 50 \\
+Batch size & 8 \\
+Optimizer & Adam \\
+Learning rate & $0.001$ \\
+Loss function & Point MSE + Mask BCE \\
+Training time & $\sim$2 hours (CPU) \\
+Final train loss & $140.7$ (point), $0.161$ (mask) \\
+Final val loss & $95.6$ (point), $0.169$ (mask) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+%% Table 6: Dataset Statistics
+\begin{table}[t]
+\centering
+\caption{Dataset Composition}
+\label{tab:dataset}
+\begin{tabular}{@{}lc@{}}
+\toprule
+\textbf{Split} & \textbf{Count} \\
+\midrule
+Total icons & 77 \\
+Training samples & 693 (with augmentation) \\
+Validation samples & 77 \\
+Test samples & 15 (ablation study) \\
+\midrule
+Avg paths per icon & $8.4 \pm 3.2$ \\
+Avg points per icon & $87.5 \pm 28.4$ \\
+Image resolution & $256 \times 256$ \\
+Coordinate range & $[0, 1]$ (normalized) \\
+\bottomrule
+\end{tabular}
+\end{table}

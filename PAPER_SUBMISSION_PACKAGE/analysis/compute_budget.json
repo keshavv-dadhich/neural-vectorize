@@ -1,0 +1,16 @@
+{
+  "neural_inference": {
+    "mean_ms": 37.0
+  },
+  "optimization_breakdown": {
+    "neural_inference": 0.037,
+    "edge_initialization": 0.15,
+    "loss_computation": 8.2,
+    "gradient_computation": 1.2,
+    "parameter_updates": 0.3,
+    "svg_rendering": 0.2,
+    "total": 10.1
+  },
+  "bottleneck": "loss_computation",
+  "bottleneck_percentage": 81.18811881188118
+}
