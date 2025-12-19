@@ -1,36 +1,31 @@
-# NeuralVectorize: Neural-Guided Image Vectorization with Edge-Aligned Optimization
+# NeuralVectorize: Neural-Guided Image Vectorization
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
 
-> **A hybrid approach to image vectorization achieving 97.1% baseline quality with 5.5× speedup**
-
-<p align="center">
-  <img src="figures/teaser_figure.png" alt="NeuralVectorize Teaser" width="800"/>
-</p>
+> **High-quality image vectorization with 5.5× speedup using neural initialization and edge-aligned optimization**
 
 ## 🎯 Overview
 
-**NeuralVectorize** combines the strengths of neural networks and optimization-based methods to convert raster images (PNG, JPG) to scalable vector graphics (SVG). Our method uses a lightweight ResNet-18 network for fast initialization (37ms) followed by edge-aligned optimization to achieve high-quality vectorization in just 10 seconds per icon.
+**NeuralVectorize** converts raster images (PNG, JPG) to scalable vector graphics (SVG) by combining neural networks with optimization-based refinement. A lightweight ResNet-18 network provides fast initialization (37ms), followed by edge-aligned optimization for high-quality results in ~10 seconds per icon.
 
 ### Key Features
 
-- ✅ **5.5× faster** than traditional optimization (10s vs 55s per icon)
-- ✅ **97.1% quality** retention with 30 optimization steps
+- ⚡ **5.5× faster** than pure optimization-based methods (10s vs 55s per icon)
+- 🎨 **High quality** - 97.1% quality retention compared to baseline
 - ✅ **100% success rate** across diverse icon datasets
-- ✅ **Novel edge alignment loss** for 69.7% better reconstruction
-- ✅ **Production-ready** at $0.002 per icon
-- ✅ **CPU-only** implementation (no GPU required)
+- 💰 **Cost-effective** at $0.002 per icon
+- 🖥️ **CPU-only** - no GPU required for inference
 
-## 📊 Results
+## 📊 Performance
 
-| Method | L2 Error ↓ | Time (s) | Quality | Speed |
-|--------|-----------|----------|---------|-------|
-| Potrace | 0.412±0.08 | 0.05 | ★★☆☆☆ | ★★★★★ |
-| Adobe Image Trace | 0.310±0.06 | 2.5 | ★★★★☆ | ★★★☆☆ |
-| Optimization-only | 0.239±0.04 | 55.1 | ★★★★★ | ★☆☆☆☆ |
-| **Ours (30 steps)** | **0.246±0.045** | **10.1** | **★★★★★** | **★★★★☆** |
+| Method | Quality (L2 Error) | Time | Notes |
+|--------|-------------------|------|-------|
+| Potrace | 0.412 ± 0.08 | 0.05s | Fast but low quality |
+| Adobe Image Trace | 0.310 ± 0.06 | 2.5s | Commercial, expensive |
+| Optimization-only | 0.239 ± 0.04 | 55s | High quality, slow |
+| **NeuralVectorize** | **0.246 ± 0.045** | **10s** | **Best tradeoff** |
 
 <p align="center">
   <img src="figures/neural_vs_edge_comparison.png" alt="Quality Comparison" width="700"/>
@@ -41,11 +36,8 @@
 ### Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/neural-vectorize.git
+git clone https://github.com/keshavv-dadhich/neural-vectorize.git
 cd neural-vectorize
-
-# Install dependencies
 pip install -r requirements.txt
 ```
 
@@ -54,32 +46,19 @@ pip install -r requirements.txt
 ```python
 from vectorizers.optimize_v3 import vectorize_image
 
-# Vectorize a single image
+# Vectorize an image
 svg_output = vectorize_image(
     input_path="input.png",
     output_path="output.svg",
-    num_steps=30  # Fast mode (10s per image)
-)
-
-# High-quality mode (slower but better)
-svg_output = vectorize_image(
-    input_path="input.png",
-    output_path="output.svg",
-    num_steps=150  # 55s per image, +2.9% quality
+    num_steps=30  # Fast mode: ~10s per image
 )
 ```
 
 ### Command Line
 
 ```bash
-# Quick vectorization (recommended)
+# Quick vectorization
 python scripts/vectorize.py --input icon.png --output icon.svg --steps 30
-
-# High-quality mode
-python scripts/vectorize.py --input icon.png --output icon.svg --steps 150
-
-# Batch processing
-python scripts/batch_vectorize.py --input_dir icons/ --output_dir vectorized/ --steps 30
 ```
 
 ## 🏗️ Architecture
